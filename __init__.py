@@ -9,7 +9,10 @@ app = Flask(__name__)
 @app.route("/contact/")
 def MaPremiereAPI():
     return "<h2>Ma page de contact</h2>"
+  
 
+    return render_template("contact.html")
+  
 
                                                                                                                                        
 @app.route('/')
@@ -36,9 +39,6 @@ def mongraphique():
 def histogramme():
     return render_template("histogramme.html")
   
-@app.route("/contact/")
-def MaPremiereAPI():
-    return render_template("contact.html")
-  
+
 if __name__ == "__main__":
   app.run(debug=True)
