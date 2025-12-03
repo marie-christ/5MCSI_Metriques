@@ -38,7 +38,6 @@ def histogramme():
   
 @app.route("/contact/")
 def MaPremiereAPI():
-
     return render_template("contact.html")
   
 if __name__ == "__main__":
