@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-moi</title>
+    </head>
+<body>
+    <header>
+        <h1>Page de Contact</h1>
+      <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4; /* Arrière-plan clair */
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+    }
+    main {
+        max-width: 600px;
+        margin: auto;
+        background: #fff; /* Fond du formulaire blanc */
+        padding: 30px;
+        border-radius: 8px; /* Coins arrondis */
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+        display: block; /* Force les labels à prendre toute la ligne */
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box; /* Assure que le padding est inclus dans la largeur */
+    }
+    button {
+        background-color: #007bff; /* Couleur d'action contrastée */
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+    </header>
 
+    <main>
+        <form action="#" method="post">
+            
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+            
+            <label for="message">Votre Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+            
+        </form>
+    </main>
+
+    <footer>
+        <p>Ceci est un exercice de design.</p>
+    </footer>
+</body>
+</html>
